@@ -1,0 +1,110 @@
+/**
+ * PMGIX — Design Tokens
+ * Central theme configuration via CSS custom properties.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  /* ── Color palette — corporate consulting ── */
+  --color-primary: #1b1b1b;
+  --color-primary-light: #333333;
+  --color-primary-dark: #000000;
+  --color-secondary: #2d2d2d;
+  --color-accent: #d85604;
+  --color-accent-hover: #b84703;
+  --color-accent-subtle: rgba(216, 86, 4, 0.08);
+
+  --color-text: #1b1b1b;
+  --color-text-muted: #5c5c5c;
+  --color-nav: #1a1a1a;
+  --color-nav-hover: #000000;
+  --color-text-inverse: #ffffff;
+
+  --color-background: #ffffff;
+  --color-background-alt: #f7fafc;
+  --color-background-dark: #edf2f7;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e0;
+
+  --color-focus-ring: #3182ce;
+  --color-error: #e53e3e;
+  --color-success: #38a169;
+
+  /* ── Typography (PwC / Deloitte–style sans) ── */
+  --font-family-base: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-nav: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-mono: ui-monospace, "Cascadia Code", monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.875rem;
+  --font-size-3xl: 2.25rem;
+  --font-size-4xl: 3rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ── Spacing scale ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ── Layout ── */
+  --container-max-width: 75rem;
+  --container-narrow: 48rem;
+  --container-padding: var(--space-4);
+  --header-height: 5rem;
+  --header-nav-size: 0.9375rem;
+  --header-nav-weight: 400;
+  --header-nav-weight-active: 600;
+  --header-logo-height: 3.25rem;
+  --grid-gap: var(--space-6);
+  --grid-gap-lg: var(--space-8);
+
+  /* ── Borders & radius ── */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  --border-width: 1px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* ── Z-index scale ── */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-header: 300;
+  --z-overlay: 400;
+}

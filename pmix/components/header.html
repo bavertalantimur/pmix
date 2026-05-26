@@ -1,0 +1,205 @@
+<!--
+
+  PMGIX — Header Component
+
+  Corporate consulting layout: logo left, centered navigation, mobile drawer.
+
+-->
+
+<header class="header" role="banner">
+
+  <div class="header__bar">
+
+    <div class="container header__inner">
+
+
+
+      <!-- Logo (left) -->
+
+      <div class="header__brand">
+
+        <a class="header__logo-link" href="#" aria-label="PMGIX Home">
+          <img
+            class="header__logo-img"
+            src="assets/images/image.png"
+            alt="PMGIX"
+            width="196"
+            height="65"
+            data-logo-img
+          >
+        </a>
+
+      </div>
+
+
+
+      <!-- Desktop navigation -->
+
+      <nav class="header__nav" aria-label="Primary">
+
+        <ul class="header__nav-list" role="list">
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link" href="#" data-nav="about">Who we are</a>
+
+          </li>
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link" href="#" data-nav="services">Services</a>
+
+          </li>
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link" href="#" data-nav="industries">Industry</a>
+
+          </li>
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link" href="#" data-nav="issues">Issues</a>
+
+          </li>
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link" href="#" data-nav="academy">PMG Academy</a>
+
+          </li>
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link" href="#" data-nav="careers">Careers</a>
+
+          </li>
+
+          <li class="header__nav-item">
+
+            <a class="header__nav-link header__nav-link--contact" href="#" data-nav="contact">Contact</a>
+
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+      <!-- Mobile menu toggle -->
+
+      <div class="header__actions">
+
+        <button
+
+          class="header__menu-toggle"
+
+          type="button"
+
+          aria-expanded="false"
+
+          aria-controls="mobile-nav"
+
+          aria-label="Open menu"
+
+          data-menu-toggle
+
+        >
+
+          <span class="header__menu-toggle-icon" aria-hidden="true">
+
+            <span class="header__menu-toggle-bar"></span>
+
+            <span class="header__menu-toggle-bar"></span>
+
+            <span class="header__menu-toggle-bar"></span>
+
+          </span>
+
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Mobile navigation drawer -->
+
+  <nav
+
+    id="mobile-nav"
+
+    class="header__mobile-nav"
+
+    aria-label="Primary mobile"
+
+    data-mobile-nav
+
+    hidden
+
+  >
+
+    <div class="header__mobile-nav-inner">
+
+      <ul class="header__mobile-nav-list" role="list">
+
+        <li>
+
+          <a class="header__mobile-nav-link" href="#" data-nav="about">Who we are</a>
+
+        </li>
+
+        <li>
+
+          <a class="header__mobile-nav-link" href="#" data-nav="services">Services</a>
+
+        </li>
+
+        <li>
+
+          <a class="header__mobile-nav-link" href="#" data-nav="industries">Industry</a>
+
+        </li>
+
+        <li>
+
+          <a class="header__mobile-nav-link" href="#" data-nav="issues">Issues</a>
+
+        </li>
+
+        <li>
+
+          <a class="header__mobile-nav-link" href="#" data-nav="academy">PMG Academy</a>
+
+        </li>
+
+        <li>
+
+          <a class="header__mobile-nav-link" href="#" data-nav="careers">Careers</a>
+
+        </li>
+
+        <li>
+
+          <a class="header__mobile-nav-link header__mobile-nav-link--contact" href="#" data-nav="contact">Contact</a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+
+<div class="overlay" data-nav-overlay aria-hidden="true"></div>
+
