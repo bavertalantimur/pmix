@@ -1,6 +1,6 @@
 /**
 
- * PMGIX — Responsive Styles
+ * pmgix — Responsive Styles
 
  * Breakpoints: 640px (sm) | 768px (md) | 1024px (lg)
 
@@ -89,27 +89,11 @@
 
 
 @media (min-width: 768px) {
-  .pillar-card {
-
-    min-height: 24rem;
-
-  }
-
-
-
   .pillar-card__media {
 
     min-height: 12rem;
 
     aspect-ratio: var(--section-media-ratio);
-
-  }
-
-
-
-  .pillar-card__base {
-
-    min-height: 5rem;
 
   }
 
@@ -164,11 +148,9 @@
 
   }
 
+  .positioning-pillars__header {
 
-
-  .pillar-card {
-
-    min-height: 26rem;
+    margin-bottom: var(--space-10);
 
   }
 
@@ -186,9 +168,9 @@
 
   .pillar-card__base {
 
-    min-height: 5.25rem;
+    padding: var(--space-6);
 
-    padding: var(--space-6) var(--space-7);
+    gap: var(--space-4);
 
   }
 
@@ -197,22 +179,6 @@
   .pillar-card__title {
 
     font-size: var(--font-size-lg);
-
-  }
-
-
-
-  .pillar-card__overlay {
-
-    padding: var(--space-8) var(--space-7) var(--space-7);
-
-  }
-
-
-
-  .pillar-card__title--overlay {
-
-    font-size: var(--font-size-xl);
 
   }
 
@@ -290,6 +256,69 @@
 
 
 
+@media (max-width: 479px) {
+
+  .header__utility-btn--search {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .header__utility-icon--search {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+
+  .header__utility-btn--locale {
+    max-width: min(9.5rem, 32vw);
+    height: 2.25rem;
+    padding-inline: 0.25rem;
+  }
+
+  .header__locale-label {
+    font-size: 0.75rem;
+  }
+
+  .header__utility-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .header__utility-panel {
+    right: -0.5rem;
+    min-width: min(16rem, calc(100vw - 2rem));
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .header__locale-label {
+    display: none;
+  }
+
+  .header__utility-btn--locale {
+    width: 2.25rem;
+    max-width: none;
+    padding: 0;
+  }
+
+  .header__locale-caret {
+    display: none;
+  }
+
+  .header__search-form {
+    max-width: none;
+    gap: var(--space-3);
+    padding-inline: 0;
+  }
+
+  .header__search-close {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+}
+
 @media (min-width: 1200px) {
 
   .header__nav {
@@ -314,23 +343,17 @@
 
   }
 
+  .header__utilities {
+    gap: 0.25rem;
+    margin-inline-end: 0.25rem;
+  }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
 
-  .header__mega-shell--industries {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .header__mega-shell--industries .header__mega-column {
-    padding: 1.15rem 1rem 1.2rem;
-  }
-
-  .header__mega-shell--industries .header__mega-link {
-    font-size: 0.9rem;
-  }
-
-  .header__mega-menu--services {
+  .header__mega-menu--services,
+  .header__mega-menu--industries {
     width: min(44rem, calc(100vw - 1.5rem));
   }
 
@@ -386,6 +409,10 @@
     gap: var(--space-6);
   }
 
+  .service-document-capabilities__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -406,8 +433,37 @@
     align-items: center;
   }
 
+  .service-detail-section .project-process__hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-detail-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: clamp(var(--space-5), 2vw, var(--space-7));
+    align-items: start;
+  }
+
+  .service-detail-content__block + .service-detail-content__block {
+    margin-top: 0;
+  }
+
+  .strategic-advisory-hero .strategic-advisory-panel {
+    max-width: min(100%, 64rem);
+    margin-inline: auto;
+  }
+
+  .service-detail-content--strategic {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
   .project-process__panel {
     padding: clamp(var(--space-8), 3.4vw, var(--space-12));
+  }
+
+  .strategic-advisory-panel.project-process__panel {
+    padding: 0;
   }
 
   .project-process__timeline {
@@ -539,8 +595,47 @@
     min-height: clamp(13.5rem, 45vw, 17rem);
   }
 
+  .services-overview-table {
+    margin-top: var(--space-7);
+  }
+
+  .services-overview-table__scroll {
+    border-radius: 0.85rem;
+  }
+
+  .services-overview-table__element {
+    min-width: 44rem;
+  }
+
+  .services-overview-table__element thead th,
+  .services-overview-table__element tbody td {
+    padding: 0.75rem 0.85rem;
+  }
+
   .services-principles-section .purpose-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-detail-content__block {
+    padding: var(--space-5);
+    border-radius: 0.8rem;
+  }
+
+  .service-detail-content__title {
+    margin-bottom: var(--space-3);
+  }
+
+  .service-detail-content__list {
+    gap: 0.42rem;
+  }
+
+  .strategic-advisory-panel__lead-group {
+    gap: var(--space-2);
+  }
+
+  .service-detail-content--strategic .service-detail-content__block + .service-detail-content__block {
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
   }
 
   .project-step {

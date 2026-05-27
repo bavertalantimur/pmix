@@ -1,5 +1,5 @@
 /**
- * PMGIX — Design Tokens
+ * pmgix — Design Tokens
  * Central theme configuration via CSS custom properties.
  */
 
@@ -25,6 +25,19 @@
   /* Our Advisory Approach — site-wide body gradient */
   --color-background-advisory: #0a3551;
   --gradient-background-advisory: linear-gradient(135deg, #08273d 0%, #0d4567 50%, #1270a3 100%);
+
+  --color-header-bg: #0c233c;
+
+  /* Positioning pillar cards — text panel on advisory gradient */
+  --pillar-card-shell-bg: rgba(24, 82, 118, 0.42);
+  --pillar-card-bg-top: rgba(148, 216, 252, 0.28);
+  --pillar-card-bg-bottom: rgba(28, 88, 122, 0.88);
+  --pillar-card-bg-tint: rgba(22, 72, 104, 0.82);
+  --pillar-card-bg-highlight: rgba(255, 255, 255, 0.08);
+  --pillar-card-border: rgba(126, 215, 255, 0.22);
+  --pillar-card-border-hover: rgba(126, 215, 255, 0.38);
+  --pillar-card-title-color: rgba(255, 255, 255, 0.96);
+  --pillar-card-text-color: rgba(255, 255, 255, 0.78);
   --color-background-alt: #f7fafc;
   --color-background-dark: #edf2f7;
   /* Hero-aligned dark section (advisory capabilities) — lighter navy */

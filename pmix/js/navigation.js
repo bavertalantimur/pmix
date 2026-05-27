@@ -1,5 +1,5 @@
 /**
- * PMGIX — Navigation Module
+ * pmgix — Navigation Module
  * Route resolution, desktop nav active states, and simple mobile drawer behavior.
  */
 
@@ -15,21 +15,35 @@ const ROUTES = {
   commercialProof: 'index.html#commercial-proof',
   partnership: 'index.html#partnership',
   services: 'pages/services.html',
+  strategicAdvisory: 'pages/strategic-advisory.html',
+  corporateFinanceMna: 'pages/corporate-finance-and-ma.html',
+  projectFinance: 'pages/project-finance.html',
+  structuredFinance: 'pages/structured-finance.html',
+  transactionAdvisory: 'pages/transaction-advisory.html',
+  financialModeling: 'pages/financial-modeling.html',
+  executiveFinance: 'pages/executive-finance.html',
+  riskGovernance: 'pages/risk-and-governance.html',
+  portfolioPerformance: 'pages/portfolio-performance.html',
+  renewableEnergyFinance: 'pages/renewable-energy-finance.html',
+  infrastructurePpp: 'pages/infrastructure-and-ppp.html',
+  restructuringTurnaround: 'pages/restructuring-and-turnaround.html',
+  legalDocumentation: 'pages/legal-and-documentation.html',
+  tax: 'pages/tax.html',
   industries: 'pages/industries.html',
-  renewableEnergy: 'pages/industries.html#renewable-energy',
-  powerUtilities: 'pages/industries.html#power-utilities',
-  infrastructureTransport: 'pages/industries.html#infrastructure-transport',
-  realEstateConstruction: 'pages/industries.html#real-estate-construction',
-  industrialsManufacturing: 'pages/industries.html#industrials-manufacturing',
-  miningMetals: 'pages/industries.html#mining-metals',
-  financialInstitutions: 'pages/industries.html#financial-institutions',
-  privateCapital: 'pages/industries.html#private-capital',
-  retail: 'pages/industries.html#retail',
-  healthcare: 'pages/industries.html#healthcare',
-  publicSector: 'pages/industries.html#public-sector',
-  education: 'pages/industries.html#education',
-  digitalInfrastructure: 'pages/industries.html#digital-infrastructure',
-  issues: 'pages/issues.html',
+  energyRenewables: 'pages/energy-and-renewables.html',
+  industryInfrastructure: 'pages/infrastructure.html',
+  financialInstitutions: 'pages/financial-institutions.html',
+  industrialsManufacturing: 'pages/industrials-and-manufacturing.html',
+  realAssetsProperty: 'pages/real-assets-and-property.html',
+  technologyDigitalInfrastructure: 'pages/technology-and-digital-infrastructure.html',
+  transportLogistics: 'pages/transport-and-logistics.html',
+  utilities: 'pages/utilities.html',
+  publicSectorPpp: 'pages/public-sector-and-ppp.html',
+  healthcareLifeSciences: 'pages/healthcare-and-life-sciences.html',
+  consumerRetail: 'pages/consumer-and-retail.html',
+  naturalResourcesMining: 'pages/natural-resources-and-mining.html',
+  financialSponsorsInvestors: 'pages/financial-sponsors-and-investors.html',
+  insights: 'pages/insights.html',
   academy: 'pages/academy.html',
   careers: 'pages/careers.html',
   contact: 'pages/contact.html',
@@ -216,7 +230,7 @@ export function initNavigation() {
   const base = getBasePath();
 
   document.querySelectorAll('[data-logo-img]').forEach((img) => {
-    img.src = `${base}assets/images/image.png`;
+    img.src = `${base}assets/images/background-removed.svg`;
   });
 
   document.querySelectorAll(SELECTORS.routeLink).forEach((link) => {

@@ -1,10 +1,11 @@
 /**
- * PMGIX — Application Entry Point
+ * pmgix — Application Entry Point
  * Loads header/footer components and initializes navigation.
  */
 
 import { initNavigation } from './navigation.js';
 import { initHeroVideoReveal } from './hero-video.js';
+import { initHeaderUtilities } from './header-utilities.js';
 
 const COMPONENT_ATTR = 'data-component';
 
@@ -33,7 +34,7 @@ async function loadComponents() {
         if (!response.ok) throw new Error(`${name}: ${response.status}`);
         target.innerHTML = await response.text();
       } catch (error) {
-        console.error('[PMGIX] Component load failed:', error);
+        console.error('[pmgix] Component load failed:', error);
       }
     })
   );
@@ -42,5 +43,6 @@ async function loadComponents() {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadComponents();
   initNavigation();
+  initHeaderUtilities();
   initHeroVideoReveal();
 });

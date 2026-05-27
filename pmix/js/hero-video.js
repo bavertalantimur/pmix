@@ -1,6 +1,6 @@
 /**
 
- * PMGIX — Hero video scroll reveal
+ * pmgix — Hero video scroll reveal
 
  * Plays background video when section enters viewport.
 

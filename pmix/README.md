@@ -1,4 +1,4 @@
-# PMGIX — Frontend Architecture
+# pmgix — Frontend Architecture
 
 Vanilla HTML, CSS, and JavaScript scaffold for a consulting company website. Placeholder structure only — no real content.
 
@@ -11,7 +11,7 @@ pmgix/
 │   ├── about.html
 │   ├── services.html
 │   ├── industries.html
-│   ├── issues.html
+│   ├── insights.html
 │   ├── academy.html
 │   ├── careers.html
 │   └── contact.html
@@ -67,7 +67,7 @@ Open `http://localhost:8080`.
 <div data-component="footer"></div>
 ```
 
-Set `data-page` on `<body>` for active navigation: `home`, `about`, `services`, `industries`, `issues`, `academy`, `careers`, `contact`.
+Set `data-page` on `<body>` for active navigation: `home`, `about`, `services`, `industries`, `insights`, `academy`, `careers`, `contact`.
 
 ## Adding content later
 
