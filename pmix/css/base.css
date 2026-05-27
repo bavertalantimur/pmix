@@ -24,7 +24,8 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
   color: var(--color-text);
-  background-color: var(--color-background);
+  background-color: var(--color-background-advisory);
+  background-image: var(--gradient-background-advisory);
 }
 
 img,
@@ -143,10 +144,13 @@ main {
 
 .section {
   padding-block: var(--space-12);
+  background-color: var(--color-background-advisory);
+  background-image: var(--gradient-background-advisory);
 }
 
 .section--alt {
-  background-color: var(--color-background-alt);
+  background-color: var(--color-background-advisory);
+  background-image: var(--gradient-background-advisory);
 }
 
 .section__header {
@@ -155,11 +159,12 @@ main {
 
 .section__title {
   margin-bottom: var(--space-4);
+  color: var(--color-text-inverse);
 }
 
 .section__subtitle {
   max-width: var(--container-narrow);
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .content-block + .grid {

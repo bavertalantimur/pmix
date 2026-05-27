@@ -65,10 +65,35 @@
           Connecting global capital with high-quality projects through strategic advisory solutions, trusted financial expertise, and disciplined execution.
         </p>
       </div>
-      <a class="hero__scroll-hint" href="#strategic-statement" aria-label="Scroll to discover more">
+      <a class="hero__scroll-hint" href="#hero-video" aria-label="Scroll to discover more">
         <span class="hero__scroll-hint-text" aria-hidden="true"></span>
         <span class="hero__scroll-hint-line" aria-hidden="true"></span>
       </a>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         HERO VIDEO — full-bleed brand film
+         ══════════════════════════════════════ -->
+    <section
+      id="hero-video"
+      class="hero-video"
+      aria-label="Brand film"
+      data-hero-video
+    >
+      <div class="hero-video__frame">
+        <video
+          class="hero-video__element"
+          data-hero-video-player
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source src="assets/videos/bakground-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video__overlay" aria-hidden="true"></div>
+      </div>
     </section>
 
     <!-- ══════════════════════════════════════
@@ -79,16 +104,15 @@
       class="strategic-statement"
       aria-labelledby="strategic-statement-heading"
     >
-      <div class="container strategic-statement__header-wrap">
-        <header class="strategic-statement__header">
-          <h2 id="strategic-statement-heading" class="strategic-statement__title">
-            <span class="strategic-statement__line">Quality and Trust for Projects That</span>
-            <span class="strategic-statement__line strategic-statement__line--accent">Shape Tomorrow</span>
-          </h2>
-        </header>
-      </div>
+      <div class="container strategic-statement__header-wrap" aria-hidden="true"></div>
       <div class="strategic-statement__stage">
         <div class="strategic-statement__grid">
+          <header class="strategic-statement__header strategic-statement__heading-panel">
+            <h2 id="strategic-statement-heading" class="strategic-statement__title">
+              <span class="strategic-statement__line">Quality and Trust for Projects That</span>
+              <span class="strategic-statement__line strategic-statement__line--accent">Shape Tomorrow</span>
+            </h2>
+          </header>
           <figure class="strategic-statement__media">
             <img
               class="strategic-statement__image"
@@ -100,12 +124,113 @@
               decoding="async"
             >
           </figure>
-          <div class="strategic-statement__content">
-            <p class="strategic-statement__tagline">pmgix turns complexity into efficiency</p>
-            <div class="strategic-statement__body">
-              <!-- Additional copy -->
+          <aside class="strategic-statement__slogan" aria-label="Brand slogan">
+            <p class="strategic-statement__tagline">
+              <span class="strategic-statement__tagline-brand">pmgix</span>
+              turns complexity into
+              <span class="strategic-statement__tagline-highlight">efficiency</span>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         POSITIONING PILLARS
+         Image top, copy below; full narrative on hover
+         ══════════════════════════════════════ -->
+    <section id="our-approach" class="section positioning-pillars" aria-labelledby="positioning-pillars-heading">
+      <div class="container">
+        <header class="section__header positioning-pillars__header">
+          <h2 id="positioning-pillars-heading" class="section__title positioning-pillars__title">
+            Our Advisory Approach
+          </h2>
+          <p class="section__subtitle positioning-pillars__subtitle">
+            Not a general consulting firm, but a focused advisory partner for complex capital decisions.
+          </p>
+        </header>
+        <div class="grid grid--cards positioning-pillars__grid" role="list">
+          <article id="strategic-positioning" class="pillar-card" role="listitem" tabindex="0">
+            <div class="pillar-card__visual">
+              <div class="pillar-card__media">
+                <img
+                  class="pillar-card__image pillar-card__image--cover"
+                  src="assets/images/santrac.png"
+                  alt="Strategic leadership at the center of global markets and integrated business systems"
+                  width="800"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="pillar-card__base">
+                <h3 class="pillar-card__title">Strategic positioning</h3>
+              </div>
             </div>
-          </div>
+            <div class="pillar-card__overlay">
+              <div class="pillar-card__overlay-inner">
+                <h3 class="pillar-card__title pillar-card__title--overlay">Strategic positioning</h3>
+                <p class="pillar-card__text">
+                  Strategic and financial advisory partner helping investors, sponsors and growth-focused companies turn complex projects into bankable, resilient and future-ready outcomes.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article id="value-promise" class="pillar-card" role="listitem" tabindex="0">
+            <div class="pillar-card__visual">
+              <div class="pillar-card__media">
+                <img
+                  class="pillar-card__image pillar-card__image--cover"
+                  src="assets/images/value.png"
+                  alt="Strategic direction and measurable value for complex capital decisions"
+                  width="800"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="pillar-card__base">
+                <h3 class="pillar-card__title">Value promise</h3>
+              </div>
+            </div>
+            <div class="pillar-card__overlay">
+              <div class="pillar-card__overlay-inner">
+                <h3 class="pillar-card__title pillar-card__title--overlay">Value promise</h3>
+                <p class="pillar-card__text">
+                  A partner that stays close to the client: disciplined, calm, senior, rigorous and present at the moments where decisions become commitments.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article id="commercial-proof" class="pillar-card" role="listitem" tabindex="0">
+            <div class="pillar-card__visual">
+              <div class="pillar-card__media">
+                <img
+                  class="pillar-card__image pillar-card__image--cover"
+                  src="assets/images/COMMERCIAL.png"
+                  alt="Commercial proof: finance leadership and transaction experience across key disciplines"
+                  width="800"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="pillar-card__base">
+                <h3 class="pillar-card__title">Commercial proof</h3>
+              </div>
+            </div>
+            <div class="pillar-card__overlay">
+              <div class="pillar-card__overlay-inner">
+                <h3 class="pillar-card__title pillar-card__title--overlay">Commercial proof</h3>
+                <p class="pillar-card__text">
+                  Experience across project finance, structured finance, renewable energy finance, M&amp;A support, portfolio monitoring and CFO-level finance leadership.
+                </p>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -174,218 +299,86 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════
-         HERO VIDEO — full-bleed brand film
-         ══════════════════════════════════════ -->
-    <section
-      id="hero-video"
-      class="hero-video"
-      aria-label="Brand film"
-      data-hero-video
-    >
-      <div class="hero-video__frame">
-        <video
-          class="hero-video__element"
-          data-hero-video-player
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          aria-hidden="true"
-        >
-          <source src="assets/videos/bakground-video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-video__overlay" aria-hidden="true"></div>
-      </div>
-    </section>
 
-    <!-- ══════════════════════════════════════
-         POSITIONING PILLARS
-         Image top, copy below; full narrative on hover
-         ══════════════════════════════════════ -->
-    <section class="section positioning-pillars" aria-labelledby="positioning-pillars-heading">
+    <section id="project-process" class="section project-process" aria-labelledby="project-process-heading">
       <div class="container">
-        <header class="section__header positioning-pillars__header">
-          <h2 id="positioning-pillars-heading" class="section__title positioning-pillars__title">
-            Our Advisory Approach
-          </h2>
-          <p class="section__subtitle positioning-pillars__subtitle">
-            Not a general consulting firm, but a focused advisory partner for complex capital decisions.
-          </p>
-        </header>
-        <div class="grid grid--cards positioning-pillars__grid" role="list">
-          <article class="pillar-card" role="listitem" tabindex="0">
-            <div class="pillar-card__visual">
-              <div class="pillar-card__media">
-                <img
-                  class="pillar-card__image pillar-card__image--cover"
-                  src="assets/images/santrac.png"
-                  alt="Strategic leadership at the center of global markets and integrated business systems"
-                  width="800"
-                  height="640"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </div>
-              <div class="pillar-card__base">
-                <h3 class="pillar-card__title">Strategic positioning</h3>
-              </div>
-            </div>
-            <div class="pillar-card__overlay">
-              <div class="pillar-card__overlay-inner">
-                <h3 class="pillar-card__title pillar-card__title--overlay">Strategic positioning</h3>
-                <p class="pillar-card__text">
-                  Strategic and financial advisory partner helping investors, sponsors and growth-focused companies turn complex projects into bankable, resilient and future-ready outcomes.
-                </p>
-              </div>
-            </div>
-          </article>
+        <div class="project-process__hero">
+          <header class="project-process__panel">
+            <h2 id="project-process-heading" class="project-process__title">
+              Structuring Complex Projects with
+              <span class="project-process__title-accent">Quality, Trust and Courage</span>
+            </h2>
+            <p class="project-process__lead">
+              We bring disciplined preparation, credible structuring and stakeholder alignment to every stage of the project lifecycle, helping you navigate complexity and achieve successful outcomes.
+            </p>
+          </header>
 
-          <article class="pillar-card" role="listitem" tabindex="0">
-            <div class="pillar-card__visual">
-              <div class="pillar-card__media">
-                <img
-                  class="pillar-card__image pillar-card__image--cover"
-                  src="assets/images/value.png"
-                  alt="Strategic direction and measurable value for complex capital decisions"
-                  width="800"
-                  height="640"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </div>
-              <div class="pillar-card__base">
-                <h3 class="pillar-card__title">Value promise</h3>
-              </div>
-            </div>
-            <div class="pillar-card__overlay">
-              <div class="pillar-card__overlay-inner">
-                <h3 class="pillar-card__title pillar-card__title--overlay">Value promise</h3>
-                <p class="pillar-card__text">
-                  A partner that stays close to the client: disciplined, calm, senior, rigorous and present at the moments where decisions become commitments.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="pillar-card" role="listitem" tabindex="0">
-            <div class="pillar-card__visual">
-              <div class="pillar-card__media pillar-card__media--contain">
-                <img
-                  class="pillar-card__image pillar-card__image--contain"
-                  src="assets/images/commerical-proof.png"
-                  alt="Commercial proof: finance leadership and transaction experience across key disciplines"
-                  width="800"
-                  height="640"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </div>
-              <div class="pillar-card__base">
-                <h3 class="pillar-card__title">Commercial proof</h3>
-              </div>
-            </div>
-            <div class="pillar-card__overlay">
-              <div class="pillar-card__overlay-inner">
-                <h3 class="pillar-card__title pillar-card__title--overlay">Commercial proof</h3>
-                <p class="pillar-card__text">
-                  Experience across project finance, structured finance, renewable energy finance, M&amp;A support, portfolio monitoring and CFO-level finance leadership.
-                </p>
-              </div>
-            </div>
-          </article>
+          <figure class="project-process__media">
+            <img
+              class="project-process__image"
+              src="assets/images/process.png"
+              alt="A connected project process illustration showing documents, systems, stakeholder coordination and growth around a global delivery model."
+              width="1024"
+              height="576"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
         </div>
+
+        <ol class="project-process__timeline">
+          <li class="project-step">
+            <span class="project-step__number">1</span>
+            <article class="project-step__card">
+              <span class="project-step__phase">Assess</span>
+              <p class="project-step__text">Market, regulation, feasibility</p>
+            </article>
+          </li>
+
+          <li class="project-step">
+            <span class="project-step__number">2</span>
+            <article class="project-step__card">
+              <span class="project-step__phase">Structure</span>
+              <p class="project-step__text">Capital stack, risks, bankability</p>
+            </article>
+          </li>
+
+          <li class="project-step">
+            <span class="project-step__number">3</span>
+            <article class="project-step__card">
+              <span class="project-step__phase">Align</span>
+              <p class="project-step__text">Sponsors, investors, lenders, stakeholders</p>
+            </article>
+          </li>
+
+          <li class="project-step">
+            <span class="project-step__number">4</span>
+            <article class="project-step__card">
+              <span class="project-step__phase">Execute</span>
+              <p class="project-step__text">Documentation, closing, monitoring</p>
+            </article>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════
-         INDUSTRIES SECTION
-         Industry tile grid
-         ══════════════════════════════════════ -->
-    <section class="section section--alt industries" aria-labelledby="industries-heading">
+    <section class="closing-vision" aria-labelledby="closing-vision-title">
       <div class="container">
-        <header class="section__header">
-          <h2 id="industries-heading" class="section__title">
-            <span class="placeholder placeholder--block" style="max-width: 10rem;" aria-hidden="true"></span>
-          </h2>
-          <p class="section__subtitle">
-            <span class="placeholder placeholder--block" aria-hidden="true"></span>
-          </p>
-        </header>
-        <div class="grid grid--industries" role="list">
-          <article class="card card--industry" role="listitem">
-            <div class="card__icon-placeholder" aria-hidden="true"></div>
-            <div class="card__title-placeholder" aria-hidden="true"></div>
-          </article>
-          <article class="card card--industry" role="listitem">
-            <div class="card__icon-placeholder" aria-hidden="true"></div>
-            <div class="card__title-placeholder" aria-hidden="true"></div>
-          </article>
-          <article class="card card--industry" role="listitem">
-            <div class="card__icon-placeholder" aria-hidden="true"></div>
-            <div class="card__title-placeholder" aria-hidden="true"></div>
-          </article>
-          <article class="card card--industry" role="listitem">
-            <div class="card__icon-placeholder" aria-hidden="true"></div>
-            <div class="card__title-placeholder" aria-hidden="true"></div>
-          </article>
+        <div class="closing-vision__card">
+          <figure class="closing-vision__media">
+            <img
+              class="closing-vision__image"
+              src="assets/images/Kapanis_image.png"
+              alt="Two professionals looking over a city skyline at night beneath a guiding star."
+            >
+          </figure>
+          <div class="closing-vision__content">
+            <h2 id="closing-vision-title" class="closing-vision__title">
+              <span>From Vision to Value.</span>
+              <span class="closing-vision__title-accent">From Strategy to What's Next.</span>
+            </h2>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         INSIGHTS SECTION
-         Article card placeholders
-         ══════════════════════════════════════ -->
-    <section class="section insights" aria-labelledby="insights-heading">
-      <div class="container">
-        <header class="section__header">
-          <h2 id="insights-heading" class="section__title">
-            <span class="placeholder placeholder--block" style="max-width: 8rem;" aria-hidden="true"></span>
-          </h2>
-          <p class="section__subtitle">
-            <span class="placeholder placeholder--block" aria-hidden="true"></span>
-          </p>
-        </header>
-        <div class="grid grid--insights" role="list">
-          <article class="card card--article" role="listitem">
-            <div class="card__media" aria-hidden="true"></div>
-            <div class="card__body">
-              <div class="card__title-placeholder" aria-hidden="true"></div>
-              <div class="card__text-placeholder" aria-hidden="true"></div>
-              <div class="card__footer-placeholder" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article class="card card--article" role="listitem">
-            <div class="card__media" aria-hidden="true"></div>
-            <div class="card__body">
-              <div class="card__title-placeholder" aria-hidden="true"></div>
-              <div class="card__text-placeholder" aria-hidden="true"></div>
-              <div class="card__footer-placeholder" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article class="card card--article" role="listitem">
-            <div class="card__media" aria-hidden="true"></div>
-            <div class="card__body">
-              <div class="card__title-placeholder" aria-hidden="true"></div>
-              <div class="card__text-placeholder" aria-hidden="true"></div>
-              <div class="card__footer-placeholder" aria-hidden="true"></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         CONTACT CTA SECTION
-         Call-to-action before footer
-         ══════════════════════════════════════ -->
-    <section class="section cta-section" aria-labelledby="cta-heading">
-      <div class="container cta-section__inner">
-        <h2 id="cta-heading" class="sr-only"></h2>
-        <div class="cta-section__title-placeholder" aria-hidden="true"></div>
-        <div class="cta-section__text-placeholder" aria-hidden="true"></div>
-        <div class="cta-section__button-placeholder" role="presentation" aria-hidden="true"></div>
       </div>
     </section>
 

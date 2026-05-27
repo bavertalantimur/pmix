@@ -12,10 +12,7 @@
 
     <div class="container header__inner">
 
-
-
       <!-- Logo (left) -->
-
       <div class="header__brand">
 
         <a class="header__logo-link" href="#" aria-label="PMGIX Home">
@@ -31,164 +28,298 @@
 
       </div>
 
-
-
       <!-- Desktop navigation -->
-
       <nav class="header__nav" aria-label="Primary">
 
         <ul class="header__nav-list" role="list">
 
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--dropdown header__nav-item--who-we-are">
 
-            <a class="header__nav-link" href="#" data-nav="about">Who we are</a>
+            <a
+              class="header__nav-link header__nav-link--dropdown"
+              href="#"
+              data-nav="about"
+              aria-haspopup="true"
+            >
+              <span>Who we are</span>
+              <span class="header__nav-caret" aria-hidden="true"></span>
+            </a>
+
+            <div class="header__mega-menu header__mega-menu--who-we-are" aria-label="Who we are submenu" data-mega-menu>
+              <div class="header__mega-shell header__mega-shell--who-we-are">
+                <section class="header__mega-column">
+                  <div class="header__mega-links">
+                    <a class="header__mega-link" href="#" data-nav="companyOverview">Company Overview</a>
+                    <a class="header__mega-link" href="#" data-nav="purpose">Purpose</a>
+                    <a class="header__mega-link" href="#" data-nav="capabilities">Integrated Capabilities</a>
+                    <a class="header__mega-link" href="#" data-nav="experienceLedCredibility">Experience</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Partnership</a>
+                    <a class="header__mega-link" href="#" data-nav="contact">Contact</a>
+                  </div>
+                </section>
+              </div>
+            </div>
 
           </li>
 
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--dropdown header__nav-item--services">
+            <a
+              class="header__nav-link header__nav-link--dropdown"
+              href="javascript:void(0)"
+              aria-haspopup="true"
+            >
+              <span>Services</span>
+              <span class="header__nav-caret" aria-hidden="true"></span>
+            </a>
 
-            <a class="header__nav-link" href="#" data-nav="services">Services</a>
+            <div class="header__mega-menu header__mega-menu--services" aria-label="Services submenu" data-mega-menu>
+              <div class="header__mega-shell header__mega-shell--services">
+                <section class="header__mega-column header__mega-column--services">
+                  <div class="header__mega-links header__mega-links--service-columns">
+                    <a class="header__mega-link" href="#" data-nav="services">Overview</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Strategic Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Corporate Finance &amp; M&amp;A Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Project Finance Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Structured Finance &amp; Capital Solutions</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Transaction Support &amp; Due Diligence</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Financial Analysis &amp; Modeling</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Executive Finance Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Risk Management &amp; Governance Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Portfolio Performance Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Renewable Energy Finance</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Infrastructure &amp; PPP Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Restructuring &amp; Turnaround Advisory</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Tax</a>
+                    <a class="header__mega-link" href="javascript:void(0)" aria-disabled="true">Legal</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </li>
 
+          <li class="header__nav-item header__nav-item--dropdown">
+            <a
+              class="header__nav-link header__nav-link--dropdown"
+              href="#"
+              data-nav="industries"
+              aria-haspopup="true"
+            >
+              <span>Industries</span>
+              <span class="header__nav-caret" aria-hidden="true"></span>
+            </a>
+
+            <div class="header__mega-menu header__mega-menu--industries" aria-label="Industries submenu" data-mega-menu>
+              <div class="header__mega-shell header__mega-shell--industries">
+                <section class="header__mega-column" aria-labelledby="mega-energy-infra">
+                  <span id="mega-energy-infra" class="header__mega-label">Energy &amp; Infrastructure</span>
+
+                  <div class="header__mega-links">
+                    <a class="header__mega-link" href="#" data-nav="renewableEnergy">Renewable Energy</a>
+                    <a class="header__mega-link" href="#" data-nav="powerUtilities">Power &amp; Utilities</a>
+                    <a class="header__mega-link" href="#" data-nav="infrastructureTransport">Infrastructure &amp; Transport</a>
+                  </div>
+                </section>
+
+                <section class="header__mega-column" aria-labelledby="mega-asset-industrial">
+                  <span id="mega-asset-industrial" class="header__mega-label">Asset-Heavy Sectors</span>
+
+                  <div class="header__mega-links">
+                    <a class="header__mega-link" href="#" data-nav="realEstateConstruction">Real Estate &amp; Construction</a>
+                    <a class="header__mega-link" href="#" data-nav="industrialsManufacturing">Industrials &amp; Manufacturing</a>
+                    <a class="header__mega-link" href="#" data-nav="miningMetals">Mining &amp; Metals</a>
+                  </div>
+                </section>
+
+                <section class="header__mega-column" aria-labelledby="mega-markets-institutions">
+                  <span id="mega-markets-institutions" class="header__mega-label">Markets &amp; Institutions</span>
+
+                  <div class="header__mega-links">
+                    <a class="header__mega-link" href="#" data-nav="financialInstitutions">Financial Institutions</a>
+                    <a class="header__mega-link" href="#" data-nav="privateCapital">Private Capital</a>
+                    <a class="header__mega-link" href="#" data-nav="retail">Retail</a>
+                    <a class="header__mega-link" href="#" data-nav="healthcare">Healthcare</a>
+                  </div>
+                </section>
+
+                <section class="header__mega-column" aria-labelledby="mega-public-growth">
+                  <span id="mega-public-growth" class="header__mega-label">Public &amp; Growth Sectors</span>
+
+                  <div class="header__mega-links">
+                    <a class="header__mega-link" href="#" data-nav="publicSector">Public Sector</a>
+                    <a class="header__mega-link" href="#" data-nav="education">Education</a>
+                    <a class="header__mega-link" href="#" data-nav="digitalInfrastructure">Technology &amp; Digital Infrastructure</a>
+                    <a class="header__mega-link" href="#" data-nav="industries">All Industries</a>
+                  </div>
+                </section>
+              </div>
+            </div>
           </li>
 
           <li class="header__nav-item">
-
-            <a class="header__nav-link" href="#" data-nav="industries">Industry</a>
-
-          </li>
-
-          <li class="header__nav-item">
-
             <a class="header__nav-link" href="#" data-nav="issues">Issues</a>
-
           </li>
 
           <li class="header__nav-item">
-
             <a class="header__nav-link" href="#" data-nav="academy">PMG Academy</a>
-
           </li>
 
           <li class="header__nav-item">
-
             <a class="header__nav-link" href="#" data-nav="careers">Careers</a>
-
-          </li>
-
-          <li class="header__nav-item">
-
-            <a class="header__nav-link header__nav-link--contact" href="#" data-nav="contact">Contact</a>
-
           </li>
 
         </ul>
 
       </nav>
 
-
-
       <!-- Mobile menu toggle -->
-
       <div class="header__actions">
 
         <button
-
           class="header__menu-toggle"
-
           type="button"
-
           aria-expanded="false"
-
           aria-controls="mobile-nav"
-
           aria-label="Open menu"
-
           data-menu-toggle
-
         >
-
           <span class="header__menu-toggle-icon" aria-hidden="true">
-
             <span class="header__menu-toggle-bar"></span>
-
             <span class="header__menu-toggle-bar"></span>
-
             <span class="header__menu-toggle-bar"></span>
-
           </span>
-
         </button>
 
       </div>
-
-
 
     </div>
 
   </div>
 
-
-
   <!-- Mobile navigation drawer -->
-
   <nav
-
     id="mobile-nav"
-
     class="header__mobile-nav"
-
     aria-label="Primary mobile"
-
     data-mobile-nav
-
     hidden
-
   >
 
     <div class="header__mobile-nav-inner">
 
       <ul class="header__mobile-nav-list" role="list">
 
-        <li>
+        <li class="header__mobile-nav-group">
+          <button
+            class="header__mobile-nav-link header__mobile-nav-link--toggle"
+            type="button"
+            data-mobile-accordion-toggle
+            aria-expanded="false"
+            aria-controls="mobile-who-we-are"
+          >
+            <span>Who we are</span>
+            <span class="header__mobile-nav-caret" aria-hidden="true"></span>
+          </button>
 
-          <a class="header__mobile-nav-link" href="#" data-nav="about">Who we are</a>
+          <div id="mobile-who-we-are" class="header__mobile-subnav" hidden>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="companyOverview">Company Overview</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="purpose">Purpose</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="capabilities">Integrated Capabilities</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="experienceLedCredibility">Experience</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Partnership</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="contact">Contact</a>
+          </div>
+        </li>
 
+        <li class="header__mobile-nav-group">
+          <button
+            class="header__mobile-nav-link header__mobile-nav-link--toggle"
+            type="button"
+            data-mobile-accordion-toggle
+            aria-expanded="false"
+            aria-controls="mobile-services"
+          >
+            <span>Services</span>
+            <span class="header__mobile-nav-caret" aria-hidden="true"></span>
+          </button>
+
+          <div id="mobile-services" class="header__mobile-subnav" hidden>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="services">Overview</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Strategic Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Corporate Finance &amp; M&amp;A Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Project Finance Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Structured Finance &amp; Capital Solutions</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Transaction Support &amp; Due Diligence</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Financial Analysis &amp; Modeling</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Executive Finance Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Risk Management &amp; Governance Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Portfolio Performance Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Renewable Energy Finance</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Infrastructure &amp; PPP Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Restructuring &amp; Turnaround Advisory</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Tax</a>
+            <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="javascript:void(0)" aria-disabled="true">Legal</a>
+          </div>
+        </li>
+
+        <li class="header__mobile-nav-group">
+          <button
+            class="header__mobile-nav-link header__mobile-nav-link--toggle"
+            type="button"
+            data-mobile-accordion-toggle
+            aria-expanded="false"
+            aria-controls="mobile-industries"
+          >
+            <span>Industries</span>
+            <span class="header__mobile-nav-caret" aria-hidden="true"></span>
+          </button>
+
+          <div id="mobile-industries" class="header__mobile-subnav" hidden>
+            <div class="header__mobile-subsection">
+              <span class="header__mobile-subtitle">Overview</span>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="industries">All Industries</a>
+            </div>
+
+            <div class="header__mobile-subsection">
+              <span class="header__mobile-subtitle">Energy &amp; Infrastructure</span>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="renewableEnergy">Renewable Energy</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="powerUtilities">Power &amp; Utilities</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="infrastructureTransport">Infrastructure &amp; Transport</a>
+            </div>
+
+            <div class="header__mobile-subsection">
+              <span class="header__mobile-subtitle">Asset-Heavy Sectors</span>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="realEstateConstruction">Real Estate &amp; Construction</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="industrialsManufacturing">Industrials &amp; Manufacturing</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="miningMetals">Mining &amp; Metals</a>
+            </div>
+
+            <div class="header__mobile-subsection">
+              <span class="header__mobile-subtitle">Markets &amp; Institutions</span>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="financialInstitutions">Financial Institutions</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="privateCapital">Private Capital</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="retail">Retail</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="healthcare">Healthcare</a>
+            </div>
+
+            <div class="header__mobile-subsection">
+              <span class="header__mobile-subtitle">Public &amp; Growth Sectors</span>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="publicSector">Public Sector</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="education">Education</a>
+              <a class="header__mobile-nav-link header__mobile-nav-link--leaf" href="#" data-nav="digitalInfrastructure">Technology &amp; Digital Infrastructure</a>
+            </div>
+          </div>
         </li>
 
         <li>
-
-          <a class="header__mobile-nav-link" href="#" data-nav="services">Services</a>
-
-        </li>
-
-        <li>
-
-          <a class="header__mobile-nav-link" href="#" data-nav="industries">Industry</a>
-
-        </li>
-
-        <li>
-
           <a class="header__mobile-nav-link" href="#" data-nav="issues">Issues</a>
-
         </li>
 
         <li>
-
           <a class="header__mobile-nav-link" href="#" data-nav="academy">PMG Academy</a>
-
         </li>
 
         <li>
-
           <a class="header__mobile-nav-link" href="#" data-nav="careers">Careers</a>
-
-        </li>
-
-        <li>
-
-          <a class="header__mobile-nav-link header__mobile-nav-link--contact" href="#" data-nav="contact">Contact</a>
-
         </li>
 
       </ul>
@@ -199,7 +330,4 @@
 
 </header>
 
-
-
 <div class="overlay" data-nav-overlay aria-hidden="true"></div>
-

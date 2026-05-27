@@ -22,8 +22,16 @@
   --color-text-inverse: #ffffff;
 
   --color-background: #ffffff;
+  /* Our Advisory Approach — site-wide body gradient */
+  --color-background-advisory: #0a3551;
+  --gradient-background-advisory: linear-gradient(135deg, #08273d 0%, #0d4567 50%, #1270a3 100%);
   --color-background-alt: #f7fafc;
   --color-background-dark: #edf2f7;
+  /* Hero-aligned dark section (advisory capabilities) — lighter navy */
+  --color-section-dark: #1e2f44;
+  --color-section-dark-text: rgba(255, 255, 255, 0.92);
+  --color-section-dark-text-muted: rgba(255, 255, 255, 0.68);
+  --color-section-dark-border: rgba(255, 255, 255, 0.1);
   --color-surface: #ffffff;
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e0;
@@ -96,6 +104,15 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-media: 0 18px 34px rgba(7, 22, 41, 0.18), 0 1px 0 rgba(255, 255, 255, 0.08) inset;
+
+  /* ── Shared media framing ── */
+  --section-media-ratio: 16 / 9;
+  --section-media-radius: 1.375rem;
+  --section-media-border: rgba(255, 255, 255, 0.14);
+  --section-media-frame-start: #061425;
+  --section-media-frame-mid: #0b2240;
+  --section-media-frame-end: #12345b;
 
   /* ── Transitions ── */
   --transition-fast: 150ms ease;
