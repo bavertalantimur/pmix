@@ -1,0 +1,9 @@
+# pmgix robots.txt
+User-agent: *
+Allow: /
+
+Disallow: /components/
+Disallow: /scripts/
+Disallow: /seo/
+
+Sitemap: https://www.pmgix.com/sitemap.xml

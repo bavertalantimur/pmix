@@ -1,0 +1,58 @@
+{
+  "siteUrl": "https://www.pmgix.com",
+  "siteName": "pmgix",
+  "defaultLocale": "en_US",
+  "defaultLanguage": "en",
+  "author": "pmgix",
+  "themeColor": "#0c233c",
+  "twitterHandle": "@pmgix",
+  "ogImage": "/assets/images/og-default.jpg",
+  "ogImageAlt": "pmgix — Strategic Financial Advisory",
+  "ogImageWidth": 1200,
+  "ogImageHeight": 630,
+  "organization": {
+    "name": "pmgix",
+    "legalName": "pmgix",
+    "description": "Strategic financial advisory for complex projects, transactions, and long-term value creation.",
+    "email": "info@pmgix.com",
+    "telephone": "+90-212-000-0000",
+    "address": {
+      "streetAddress": "Sarphan Finans Park, Finans Street No. 5, Financial Center",
+      "addressLocality": "Ümraniye",
+      "addressRegion": "Istanbul",
+      "postalCode": "34760",
+      "addressCountry": "TR"
+    },
+    "sameAs": []
+  },
+  "pageOverrides": {
+    "index.html": {
+      "title": "pmgix | Strategic Financial Advisory",
+      "description": "pmgix connects global capital with high-quality projects through strategic advisory, project finance, and disciplined execution."
+    },
+    "pages/about.html": {
+      "title": "Who We Are | pmgix",
+      "description": "Purpose-led financial advisory connecting strategy, capital and execution to help clients structure, finance and deliver complex projects."
+    },
+    "pages/industries.html": {
+      "title": "Industries | pmgix",
+      "description": "Industry coverage across energy, infrastructure, financial institutions, industrials, and digital sectors — focused on project finance and execution-ready transactions."
+    },
+    "pages/privacy-policy.html": {
+      "title": "Privacy Policy | pmgix",
+      "description": "How pmgix collects, uses, and protects personal data in line with GDPR, UK GDPR, and applicable data protection laws."
+    },
+    "pages/cookie-policy.html": {
+      "title": "Cookie Policy | pmgix",
+      "description": "How pmgix uses cookies and similar technologies on its website, and how you can manage your preferences."
+    },
+    "pages/terms-of-use.html": {
+      "title": "Terms of Use | pmgix",
+      "description": "Terms governing access to and use of the pmgix website, including disclaimers, intellectual property, and liability limitations."
+    },
+    "pages/data-protection-rights.html": {
+      "title": "Data Protection Rights | pmgix",
+      "description": "How to exercise your GDPR and data protection rights with pmgix, including access, correction, deletion, and complaint procedures."
+    }
+  }
+}

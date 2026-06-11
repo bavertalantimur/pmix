@@ -58,6 +58,10 @@
   grid-template-columns: 1fr;
 }
 
+.grid--insights-categories {
+  grid-template-columns: 1fr;
+}
+
 .grid--footer {
   grid-template-columns: 1fr;
   gap: var(--space-8);
