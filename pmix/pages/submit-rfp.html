@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a Request for Proposal to pmgix. Share your scope, documents, and requirements for a structured advisory response.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Submit RFP | pmgix">
+  <meta property="og:description" content="Request for Proposal submission form for pmgix advisory services.">
+  <title>Submit RFP | pmgix</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/rfp-form.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="page page-rfp" data-page="submitRfp">
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div data-component="header"></div>
+
+  <main id="main-content" class="rfp-page">
+    <div class="container container--narrow rfp-page__inner">
+
+      <header class="rfp-page__header">
+        <h1 class="rfp-page__title">Thank you for your interest in pmgix's services</h1>
+        <p class="rfp-page__text">
+          Please complete the form below to submit a Request for Proposal. You may also upload
+          supporting documents where indicated.
+        </p>
+        <p class="rfp-page__text">
+          This mailbox is intended for qualified proposal requests. For general enquiries, please
+          <a class="rfp-page__link" href="contact.html">contact us</a>.
+        </p>
+        <p class="rfp-page__required-note">Fields marked with an asterisk (*) are required.</p>
+      </header>
+
+      <div class="rfp-form__status" id="rfp-form-status" role="status" aria-live="polite" hidden></div>
+
+      <form class="rfp-form" id="rfp-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-title">Title</label>
+          <select id="rfp-title" name="title" class="rfp-form__control rfp-form__select" required>
+            <option value="" disabled selected>Title*</option>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="dr">Dr.</option>
+            <option value="prof">Prof.</option>
+          </select>
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-first-name">First name</label>
+          <input
+            type="text"
+            id="rfp-first-name"
+            name="firstName"
+            class="rfp-form__control"
+            placeholder="First name*"
+            required
+            autocomplete="given-name"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-last-name">Last name</label>
+          <input
+            type="text"
+            id="rfp-last-name"
+            name="lastName"
+            class="rfp-form__control"
+            placeholder="Last name*"
+            required
+            autocomplete="family-name"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-job-title">Position / Job title</label>
+          <input
+            type="text"
+            id="rfp-job-title"
+            name="jobTitle"
+            class="rfp-form__control"
+            placeholder="Position/Job title"
+            autocomplete="organization-title"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-email">Email</label>
+          <input
+            type="email"
+            id="rfp-email"
+            name="email"
+            class="rfp-form__control"
+            placeholder="Email*"
+            required
+            autocomplete="email"
+            inputmode="email"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-phone">Phone</label>
+          <input
+            type="tel"
+            id="rfp-phone"
+            name="phone"
+            class="rfp-form__control"
+            placeholder="Phone"
+            autocomplete="tel"
+            inputmode="tel"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-postal-code">Postal Code</label>
+          <input
+            type="text"
+            id="rfp-postal-code"
+            name="postalCode"
+            class="rfp-form__control"
+            placeholder="Postal Code*"
+            required
+            autocomplete="postal-code"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-location">Location</label>
+          <select id="rfp-location" name="location" class="rfp-form__control rfp-form__select" required>
+            <option value="" disabled selected>Location*</option>
+            <option value="TR">Türkiye</option>
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+            <option value="AE">United Arab Emirates</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="OTHER">Other</option>
+          </select>
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-interest">Area of interest</label>
+          <select id="rfp-interest" name="areaOfInterest" class="rfp-form__control rfp-form__select" required>
+            <option value="" disabled selected>Area of interest*</option>
+            <option value="project-finance">Project finance &amp; structuring</option>
+            <option value="transaction">Transaction advisory</option>
+            <option value="strategic">Strategic advisory</option>
+            <option value="restructuring">Restructuring &amp; turnaround</option>
+            <option value="infrastructure">Infrastructure &amp; PPP</option>
+            <option value="renewables">Renewable energy finance</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-sectors">Sectors</label>
+          <select id="rfp-sectors" name="sectors" class="rfp-form__control rfp-form__select" required>
+            <option value="" disabled selected>Sectors*</option>
+            <option value="energy">Energy &amp; renewables</option>
+            <option value="infrastructure">Infrastructure</option>
+            <option value="financial">Financial institutions</option>
+            <option value="industrials">Industrials &amp; manufacturing</option>
+            <option value="real-assets">Real assets &amp; property</option>
+            <option value="technology">Technology &amp; digital infrastructure</option>
+            <option value="transport">Transport &amp; logistics</option>
+            <option value="healthcare">Healthcare &amp; life sciences</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-company">Company / Organisation name</label>
+          <input
+            type="text"
+            id="rfp-company"
+            name="companyName"
+            class="rfp-form__control"
+            placeholder="Company/Organisation name"
+            autocomplete="organization"
+          >
+        </div>
+
+        <div class="rfp-form__field">
+          <label class="sr-only" for="rfp-revenue">Yearly revenue</label>
+          <select id="rfp-revenue" name="yearlyRevenue" class="rfp-form__control rfp-form__select">
+            <option value="" disabled selected>Yearly revenue</option>
+            <option value="under-10m">Under USD 10M</option>
+            <option value="10m-50m">USD 10M – 50M</option>
+            <option value="50m-250m">USD 50M – 250M</option>
+            <option value="250m-1b">USD 250M – 1B</option>
+            <option value="over-1b">Over USD 1B</option>
+            <option value="prefer-not">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="rfp-form__field rfp-form__field--full">
+          <label class="sr-only" for="rfp-website">Company website address</label>
+          <input
+            type="text"
+            id="rfp-website"
+            name="website"
+            class="rfp-form__control"
+            placeholder="Company website address*"
+            required
+            inputmode="url"
+            autocomplete="url"
+          >
+        </div>
+
+        <div class="rfp-form__attachment">
+          <span class="rfp-form__attachment-label" id="rfp-attachment-label">Attachment</span>
+          <label class="rfp-form__file-button" for="rfp-attachment">
+            <span class="rfp-form__file-button-text" data-file-label>Choose File</span>
+            <input
+              type="file"
+              id="rfp-attachment"
+              name="attachment"
+              class="rfp-form__file-input"
+              aria-labelledby="rfp-attachment-label"
+              accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.zip"
+            >
+          </label>
+        </div>
+
+        <div class="rfp-form__field rfp-form__field--full">
+          <label class="sr-only" for="rfp-comments">Comments and/or instructions</label>
+          <textarea
+            id="rfp-comments"
+            name="comments"
+            class="rfp-form__control rfp-form__textarea"
+            placeholder="Comments and/or instructions*"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <div class="rfp-form__consent">
+          <label class="rfp-form__checkbox">
+            <input type="checkbox" id="rfp-terms" name="terms" required>
+            <span class="rfp-form__checkbox-box" aria-hidden="true"></span>
+            <span class="rfp-form__checkbox-text">
+              I have read and accept the
+              <a class="rfp-page__link" href="#">Terms of Use</a>.
+              Please read our
+              <a class="rfp-page__link" href="#">privacy statement</a>
+              to understand how we plan to use your personal information.
+            </span>
+          </label>
+        </div>
+
+        <div class="rfp-form__actions">
+          <button type="submit" class="rfp-form__submit">Submit</button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <div data-component="footer"></div>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

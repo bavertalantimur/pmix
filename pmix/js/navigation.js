@@ -47,6 +47,8 @@ const ROUTES = {
   academy: 'pages/academy.html',
   careers: 'pages/careers.html',
   contact: 'pages/contact.html',
+  location: 'pages/location.html',
+  submitRfp: 'pages/submit-rfp.html',
 };
 
 const SELECTORS = {

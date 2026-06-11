@@ -6,6 +6,8 @@
 import { initNavigation } from './navigation.js';
 import { initHeroVideoReveal } from './hero-video.js';
 import { initHeaderUtilities } from './header-utilities.js';
+import { initContactForm } from './contact-form.js';
+import { initRfpForm } from './rfp-form.js';
 
 const COMPONENT_ATTR = 'data-component';
 
@@ -40,9 +42,17 @@ async function loadComponents() {
   );
 }
 
+function initFooterYear() {
+  const yearEl = document.querySelector('[data-footer-year]');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   await loadComponents();
+  initFooterYear();
   initNavigation();
   initHeaderUtilities();
   initHeroVideoReveal();
+  initContactForm();
+  initRfpForm();
 });

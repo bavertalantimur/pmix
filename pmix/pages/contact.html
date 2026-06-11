@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Contact pmgix for financial advisory, project finance, and transaction support. Share your inquiry and our team will respond promptly.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <title></title>
+  <meta property="og:title" content="Contact | pmgix">
+  <meta property="og:description" content="Get in touch with pmgix for strategic financial advisory and complex project support.">
+  <title>Contact | pmgix</title>
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/layout.css">
@@ -17,51 +17,288 @@
 </head>
 <body class="page page-contact" data-page="contact">
 
-  <a class="skip-link" href="#main-content"></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div data-component="header"></div>
 
   <main id="main-content">
 
     <section class="page-hero" aria-labelledby="page-title">
       <div class="container">
-        <div class="page-hero__breadcrumb-placeholder" aria-hidden="true"></div>
-        <h1 id="page-title" class="page-hero__title-placeholder" aria-hidden="true"></h1>
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <ol class="page-hero__breadcrumb-list">
+            <li><a href="../index.html">Home</a></li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <div class="page-hero__panel">
+          <p class="page-hero__eyebrow">Get in touch</p>
+          <h1 id="page-title" class="page-hero__title">Contact us</h1>
+          <p class="page-hero__subtitle">
+            Tell us about your project, transaction, or advisory need. A member of our team will
+            review your message and respond within two business days.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="section" aria-label="">
+    <section class="section contact-section" aria-labelledby="contact-form-heading">
       <div class="container contact__layout">
-        <!-- Contact form skeleton -->
-        <div>
-          <form class="form" action="#" method="post" novalidate>
-            <div class="form__group">
-              <div class="form__label-placeholder" aria-hidden="true"></div>
-              <div class="form__input-placeholder" role="presentation" aria-hidden="true"></div>
+
+        <div class="contact-form-panel">
+          <header class="contact-form__intro">
+            <h2 id="contact-form-heading" class="contact-form__title">Send us a message</h2>
+            <p class="contact-form__lead">
+              Fields marked with <span class="contact-form__required-mark" aria-hidden="true">*</span>
+              are required. We treat all submissions confidentially.
+            </p>
+          </header>
+
+          <div class="contact-form__status" id="contact-form-status" role="status" aria-live="polite" hidden></div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="#"
+            method="post"
+            novalidate
+          >
+            <fieldset class="contact-form__section">
+              <legend class="contact-form__legend">Your inquiry</legend>
+
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="inquiry-type">
+                  How can we help? <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="contact-form__control">
+                  <select
+                    id="inquiry-type"
+                    name="inquiryType"
+                    class="contact-form__select"
+                    required
+                    autocomplete="off"
+                  >
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="project-finance">Project finance &amp; structuring</option>
+                    <option value="transaction">Transaction advisory</option>
+                    <option value="strategic">Strategic advisory</option>
+                    <option value="restructuring">Restructuring &amp; turnaround</option>
+                    <option value="partnership">Partnership or media inquiry</option>
+                    <option value="careers">Careers</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="message">
+                  Message <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="contact-form__control">
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="contact-form__textarea"
+                    rows="5"
+                    required
+                    placeholder="Briefly describe your project, timeline, and how we can support you."
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-form__section">
+              <legend class="contact-form__legend">About you</legend>
+
+              <div class="contact-form__row contact-form__row--2">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="first-name">
+                    First name <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="contact-form__control">
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="firstName"
+                      class="contact-form__input"
+                      required
+                      autocomplete="given-name"
+                    >
+                  </div>
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="last-name">
+                    Last name <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="contact-form__control">
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="lastName"
+                      class="contact-form__input"
+                      required
+                      autocomplete="family-name"
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="email">
+                  Email <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="contact-form__control">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="contact-form__input"
+                    required
+                    autocomplete="email"
+                    inputmode="email"
+                  >
+                </div>
+              </div>
+
+              <div class="contact-form__row contact-form__row--2">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="phone">Phone</label>
+                  <div class="contact-form__control">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="contact-form__input"
+                      autocomplete="tel"
+                      inputmode="tel"
+                    >
+                  </div>
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="country">
+                    Country / region <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="contact-form__control">
+                    <select
+                      id="country"
+                      name="country"
+                      class="contact-form__select"
+                      required
+                      autocomplete="country-name"
+                    >
+                      <option value="" disabled selected>Select country</option>
+                      <option value="TR">Türkiye</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="US">United States</option>
+                      <option value="DE">Germany</option>
+                      <option value="FR">France</option>
+                      <option value="AE">United Arab Emirates</option>
+                      <option value="SA">Saudi Arabia</option>
+                      <option value="OTHER">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form__row contact-form__row--2">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="company">
+                    Company <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="contact-form__control">
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      class="contact-form__input"
+                      required
+                      autocomplete="organization"
+                    >
+                  </div>
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="organization">
+                    Organization <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="contact-form__control">
+                    <input
+                      type="text"
+                      id="organization"
+                      name="organization"
+                      class="contact-form__input"
+                      required
+                      autocomplete="organization"
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="job-title">Job title</label>
+                <div class="contact-form__control">
+                  <input
+                    type="text"
+                    id="job-title"
+                    name="jobTitle"
+                    class="contact-form__input"
+                    autocomplete="organization-title"
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="contact-form__consent">
+              <label class="contact-form__checkbox">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  required
+                >
+                <span class="contact-form__checkbox-box" aria-hidden="true"></span>
+                <span class="contact-form__checkbox-text">
+                  I agree that pmgix may process my personal data to respond to this inquiry, in
+                  accordance with applicable privacy laws.
+                  <span class="contact-form__required-mark" aria-hidden="true">*</span>
+                </span>
+              </label>
             </div>
-            <div class="form__group">
-              <div class="form__label-placeholder" aria-hidden="true"></div>
-              <div class="form__input-placeholder" role="presentation" aria-hidden="true"></div>
+
+            <div class="contact-form__actions">
+              <button type="submit" class="contact-form__submit">
+                Submit inquiry
+              </button>
+              <p class="contact-form__footnote">
+                By submitting this form you confirm the information provided is accurate to the best
+                of your knowledge.
+              </p>
             </div>
-            <div class="form__group">
-              <div class="form__label-placeholder" aria-hidden="true"></div>
-              <div class="form__input-placeholder" role="presentation" aria-hidden="true"></div>
-            </div>
-            <div class="form__group">
-              <div class="form__label-placeholder" aria-hidden="true"></div>
-              <div class="form__textarea-placeholder" role="presentation" aria-hidden="true"></div>
-            </div>
-            <div class="form__submit-placeholder" role="presentation" aria-hidden="true"></div>
           </form>
         </div>
-        <!-- Map / office info placeholder -->
-        <aside aria-label="">
-          <div class="contact__map-placeholder" role="presentation" aria-hidden="true"></div>
-          <div class="stack stack--lg">
-            <div class="content-block__title-placeholder" aria-hidden="true"></div>
-            <div class="content-block__paragraph-placeholder" aria-hidden="true"></div>
-            <div class="content-block__paragraph-placeholder" aria-hidden="true"></div>
+
+        <aside class="contact-rfp" aria-labelledby="contact-rfp-heading">
+          <div class="contact-rfp__card">
+            <h2 id="contact-rfp-heading" class="contact-rfp__title">Request for Proposal</h2>
+            <p class="contact-rfp__lead">
+              Share your scope, timeline, and deliverables. Our team will review your RFP and respond
+              with a structured proposal.
+            </p>
+            <a
+              class="contact-rfp__button"
+              href="submit-rfp.html"
+            >
+              <span class="contact-rfp__button-label">Submit RFP</span>
+              <span class="contact-rfp__button-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <p class="contact-rfp__hint">
+              Complete the RFP form to upload documents and share project details.
+            </p>
           </div>
         </aside>
+
       </div>
     </section>
 

@@ -1,0 +1,296 @@
+/**
+ * pmgix — RFP submission form (Deloitte-style layout)
+ */
+
+.page-rfp {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.page-rfp .section,
+.page-rfp main {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.rfp-page {
+  padding-block: clamp(var(--space-10), 5vw, var(--space-16));
+  background-color: #ffffff;
+}
+
+.rfp-page__inner {
+  max-width: 40rem;
+}
+
+.rfp-page__header {
+  margin-bottom: var(--space-8);
+}
+
+.rfp-page__title {
+  margin: 0 0 var(--space-5);
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.35rem, 2vw + 0.75rem, 1.75rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: #000000;
+}
+
+.rfp-page__text {
+  margin: 0 0 var(--space-4);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: #1b1b1b;
+}
+
+.rfp-page__required-note {
+  margin: var(--space-6) 0 0;
+  font-size: var(--font-size-sm);
+  color: #1b1b1b;
+}
+
+.rfp-page__link {
+  color: #0d8390;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.rfp-page__link:hover {
+  color: #0a6b75;
+}
+
+/* ── Form stack ── */
+.rfp-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.rfp-form__field {
+  width: 100%;
+}
+
+.rfp-form__field--full {
+  width: 100%;
+}
+
+.rfp-form__control {
+  display: block;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.875rem 1rem;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.25;
+  color: #1b1b1b;
+  background-color: #ffffff;
+  border: 1px solid #63666a;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.rfp-form__control::placeholder {
+  color: #63666a;
+}
+
+.rfp-form__control:hover {
+  border-color: #1b1b1b;
+}
+
+.rfp-form__control:focus {
+  outline: none;
+  border-color: #0d8390;
+  box-shadow: 0 0 0 1px #0d8390;
+}
+
+.rfp-form__field--invalid .rfp-form__control {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 1px var(--color-error);
+}
+
+.rfp-form__select {
+  appearance: none;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  color: #63666a;
+}
+
+.rfp-form__select:valid,
+.rfp-form__select option:not([value=""]) {
+  color: #1b1b1b;
+}
+
+.rfp-form__field {
+  position: relative;
+}
+
+.rfp-form__field:has(.rfp-form__select)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid #63666a;
+  border-bottom: 2px solid #63666a;
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.rfp-form__textarea {
+  min-height: 9rem;
+  resize: vertical;
+  padding-top: 0.875rem;
+}
+
+/* Attachment */
+.rfp-form__attachment {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.rfp-form__attachment-label {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: #000000;
+}
+
+.rfp-form__file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.rfp-form__file-button {
+  display: inline-flex;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.rfp-form__file-button-text {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-size: var(--font-size-sm);
+  color: #1b1b1b;
+  background-color: #ffffff;
+  border: 1px solid #63666a;
+  border-radius: 9999px;
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.rfp-form__file-button:hover .rfp-form__file-button-text {
+  border-color: #1b1b1b;
+  background-color: #f7fafc;
+}
+
+/* Consent */
+.rfp-form__consent {
+  padding-top: var(--space-4);
+}
+
+.rfp-form__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  cursor: pointer;
+}
+
+.rfp-form__checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.rfp-form__checkbox-box {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.2rem;
+  border: 1px solid #63666a;
+  border-radius: 0.15rem;
+  background-color: #ffffff;
+}
+
+.rfp-form__checkbox input:checked + .rfp-form__checkbox-box {
+  border-color: #0d8390;
+  background-color: #0d8390;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10' fill='none'%3E%3Cpath d='M1 5.2L4.2 8.4L11 1.6' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.6rem;
+}
+
+.rfp-form__checkbox-text {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: #1b1b1b;
+}
+
+.rfp-form__consent--invalid .rfp-form__checkbox-box {
+  border-color: var(--color-error);
+}
+
+/* Submit */
+.rfp-form__actions {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-6);
+}
+
+.rfp-form__submit {
+  min-width: 8rem;
+  padding: 0.75rem 2.5rem;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: #ffffff;
+  background-color: #0d8390;
+  border: none;
+  border-radius: 9999px;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.rfp-form__submit:hover {
+  background-color: #0a6b75;
+}
+
+.rfp-form__submit:active {
+  transform: translateY(1px);
+}
+
+.rfp-form__status {
+  margin-bottom: var(--space-6);
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+}
+
+.rfp-form__status--success {
+  color: #22543d;
+  background-color: #f0fff4;
+  border-color: #9ae6b4;
+}
+
+.rfp-form__status--error {
+  color: #742a2a;
+  background-color: #fff5f5;
+  border-color: #feb2b2;
+}

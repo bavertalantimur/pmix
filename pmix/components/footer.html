@@ -1,55 +1,101 @@
 <!--
   pmgix — Footer Component
-  Injected via main.js into [data-component="footer"]
+  Icons: Font Awesome 6 (vendors.css). Social: add href on .footer__icon-btn when ready.
 -->
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <div class="grid grid--footer">
-      <!-- Column 1: Brand -->
+    <div class="footer__main grid grid--footer">
       <div class="footer__column footer__column--brand">
-        <div class="footer__brand-placeholder" aria-hidden="true"></div>
-        <div class="footer__link-placeholder" aria-hidden="true"></div>
-        <div class="footer__link-placeholder" aria-hidden="true"></div>
+        <a class="footer__logo-link" href="#" data-nav="home" aria-label="pmgix Home">
+          <img
+            class="footer__logo-img"
+            src="assets/images/background-removed.svg"
+            alt="pmgix"
+            width="200"
+            height="64"
+            data-logo-img
+          >
+        </a>
+        <p class="footer__tagline">
+          Strategic financial advisory for complex projects, transactions, and long-term value creation.
+        </p>
       </div>
 
-      <!-- Column 2: Links group -->
-      <div class="footer__column">
-        <div class="footer__column-title-placeholder" aria-hidden="true"></div>
-        <ul class="footer__link-list" role="list">
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
+      <nav class="footer__column" aria-labelledby="footer-nav-company">
+        <h2 id="footer-nav-company" class="footer__heading">Company</h2>
+        <ul class="footer__nav-list" role="list">
+          <li><a class="footer__nav-link" href="#" data-nav="companyOverview">Company Overview</a></li>
+          <li><a class="footer__nav-link" href="#" data-nav="about">Who We Are</a></li>
+          <li><a class="footer__nav-link" href="#" data-nav="experienceLedCredibility">Experience</a></li>
+          <li><a class="footer__nav-link" href="#" data-nav="careers">Careers</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__column" aria-labelledby="footer-nav-expertise">
+        <h2 id="footer-nav-expertise" class="footer__heading">Expertise</h2>
+        <ul class="footer__nav-list" role="list">
+          <li><a class="footer__nav-link" href="#" data-nav="services">Services</a></li>
+          <li><a class="footer__nav-link" href="#" data-nav="industries">Industries</a></li>
+          <li><a class="footer__nav-link" href="#" data-nav="insights">Insights</a></li>
+          <li><a class="footer__nav-link" href="#" data-nav="submitRfp">Submit RFP</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__column footer__column--contact">
+        <h2 class="footer__heading">Contact</h2>
+        <ul class="footer__nav-list" role="list">
+          <li>
+            <a class="footer__nav-link" href="#" data-nav="location">Locations</a>
+          </li>
         </ul>
       </div>
 
-      <!-- Column 3: Links group -->
-      <div class="footer__column">
-        <div class="footer__column-title-placeholder" aria-hidden="true"></div>
-        <ul class="footer__link-list" role="list">
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-        </ul>
-      </div>
-
-      <!-- Column 4: Links group -->
-      <div class="footer__column">
-        <div class="footer__column-title-placeholder" aria-hidden="true"></div>
-        <ul class="footer__link-list" role="list">
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
-          <li><span class="footer__link-placeholder" aria-hidden="true"></span></li>
+      <div class="footer__column footer__column--social" aria-labelledby="footer-follow-us">
+        <h2 id="footer-follow-us" class="footer__heading">Follow us</h2>
+        <ul class="footer__icon-list" role="list" aria-label="Social media">
+          <li>
+            <span class="footer__icon-btn" data-social="linkedin" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn</span>
+            </span>
+          </li>
+          <li>
+            <span class="footer__icon-btn" data-social="facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span>
+            </span>
+          </li>
+          <li>
+            <span class="footer__icon-btn" data-social="instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span class="sr-only">Instagram</span>
+            </span>
+          </li>
+          <li>
+            <span class="footer__icon-btn" data-social="youtube" title="YouTube">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              <span class="sr-only">YouTube</span>
+            </span>
+          </li>
+          <li>
+            <span class="footer__icon-btn" data-social="x" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <span class="sr-only">X</span>
+            </span>
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Footer bottom bar -->
-    <div class="footer__bottom flex flex--between flex--wrap flex--gap-md">
-      <div class="footer__copyright-placeholder" aria-hidden="true"></div>
-      <div class="footer__link-placeholder" aria-hidden="true"></div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; <span data-footer-year></span> pmgix. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a class="footer__legal-link" href="#" data-nav="contact">Contact</a>
+        <span class="footer__legal-sep" aria-hidden="true">·</span>
+        <a class="footer__legal-link" href="#">Privacy Policy</a>
+        <span class="footer__legal-sep" aria-hidden="true">·</span>
+        <a class="footer__legal-link" href="#">Terms of Use</a>
+      </nav>
     </div>
   </div>
 </footer>

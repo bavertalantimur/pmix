@@ -101,6 +101,7 @@
   --header-nav-weight: 400;
   --header-nav-weight-active: 600;
   --header-logo-height: 3.25rem;
+  --footer-logo-height: 4rem;
   --grid-gap: var(--space-6);
   --grid-gap-lg: var(--space-8);
 

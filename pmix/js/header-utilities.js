@@ -37,6 +37,7 @@ const SEARCH_INDEX = [
   { title: 'Investors', href: 'pages/financial-sponsors-and-investors.html', keywords: 'private equity sponsors investors' },
   { title: 'Experience', href: 'pages/experience-led-credibility.html', keywords: 'experience credibility case studies' },
   { title: 'Contact', href: 'pages/contact.html', keywords: 'contact get in touch' },
+  { title: 'Our Offices', href: 'pages/location.html', keywords: 'location office address map istanbul visit directions' },
 ];
 
 function getBasePath() {
