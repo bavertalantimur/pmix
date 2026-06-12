@@ -704,8 +704,8 @@
   }
 
   .home-services-capabilities__lead {
-    white-space: normal;
-    font-size: clamp(var(--font-size-base), 3.8vw, var(--font-size-lg));
+    white-space: nowrap;
+    font-size: clamp(0.6875rem, 2.8vw, var(--font-size-base));
     line-height: 1.35;
   }
 
@@ -905,22 +905,15 @@
 @media (max-width: 767px) {
 
   .hero-video {
-
     margin-top: clamp(-1.75rem, -8vw, -0.75rem);
-
-    padding:
-      var(--space-3)
-      var(--container-padding)
-      var(--space-10);
-
+    min-height: auto;
   }
 
-  .hero-video__frame {
-
-    aspect-ratio: 16 / 10;
-
-    min-height: 12rem;
-
+  .hero-video__content {
+    padding:
+      var(--space-10)
+      var(--container-padding)
+      var(--space-8);
   }
 
 
@@ -972,19 +965,8 @@
 @media (min-width: 1024px) {
 
   .hero-video {
-
     margin-top: clamp(-6rem, -6vw, -3rem);
-
-    padding-inline: clamp(var(--space-6), 3vw, var(--space-10));
-
-  }
-
-  .hero-video__frame {
-
-    width: min(100%, calc(var(--container-max-width) + 4rem));
-
-    min-height: 18rem;
-
+    min-height: clamp(40rem, 88vh, 54rem);
   }
 
 }

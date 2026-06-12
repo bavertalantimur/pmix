@@ -42,6 +42,18 @@ def asset_prefix(rel_path: str) -> str:
     return "../" if rel_path.startswith("pages/") else ""
 
 
+def favicon_block(prefix: str) -> str:
+    return "\n".join(
+        [
+            f'  <link rel="apple-touch-icon" sizes="180x180" href="{prefix}apple-touch-icon.png">',
+            f'  <link rel="icon" type="image/png" sizes="32x32" href="{prefix}favicon-32x32.png">',
+            f'  <link rel="icon" type="image/png" sizes="16x16" href="{prefix}favicon-16x16.png">',
+            f'  <link rel="manifest" href="{prefix}site.webmanifest">',
+            f'  <link rel="icon" href="{prefix}favicon.ico">',
+        ]
+    )
+
+
 def json_ld_block(config: dict, rel_path: str, title: str, description: str, canonical: str) -> str:
     org = config["organization"]
     org_schema = {
@@ -134,7 +146,6 @@ def build_seo_head(
     prefix = asset_prefix(rel_path)
     canonical = canonical_url(site_url, rel_path)
     og_image = f"{site_url}{config['ogImage']}"
-    favicon = f"{prefix}assets/images/background-removed.svg"
 
     lines = [
         "<head>",
@@ -166,8 +177,7 @@ def build_seo_head(
         f"  <meta name=\"twitter:image\" content=\"{og_image}\">",
         f"  <meta name=\"twitter:image:alt\" content=\"{config['ogImageAlt']}\">",
         "",
-        f"  <link rel=\"icon\" href=\"{favicon}\" type=\"image/svg+xml\">",
-        f"  <link rel=\"apple-touch-icon\" href=\"{favicon}\">",
+        favicon_block(prefix),
         "",
         json_ld_block(config, rel_path, title, description, canonical),
     ]

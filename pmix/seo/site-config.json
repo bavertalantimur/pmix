@@ -7,7 +7,7 @@
   "themeColor": "#0c233c",
   "twitterHandle": "@pmgix",
   "ogImage": "/assets/images/og-default.jpg",
-  "ogImageAlt": "pmgix — Strategic Financial Advisory",
+  "ogImageAlt": "pmgix — Financial Advisory",
   "ogImageWidth": 1200,
   "ogImageHeight": 630,
   "organization": {
@@ -27,7 +27,7 @@
   },
   "pageOverrides": {
     "index.html": {
-      "title": "pmgix | Strategic Financial Advisory",
+      "title": "pmgix | Financial Advisory",
       "description": "pmgix connects global capital with high-quality projects through strategic advisory, project finance, and disciplined execution."
     },
     "pages/about.html": {
